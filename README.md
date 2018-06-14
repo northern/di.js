@@ -41,7 +41,7 @@ It's that simple. We can now get the "logger" from the container by using `get`:
    
     logger.info("Hello DI")
 
-Since the `Container` instance is passed into the service provider, it is possible to "wire" multiple services together. I.e. a service provider can use previously registered service an "inject" them into other services. E.g. if we register another service then we can pass the `logger` to that service:
+Since the `Container` instance is passed into the service provider, it is possible to "wire" multiple services together. I.e. a service provider can use previously registered services and "inject" them into other/new services. E.g. if we register another service then we can pass the `logger` to that service:
 ````
 class PaymentService {
   constructor(logger) {

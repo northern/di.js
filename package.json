@@ -1,6 +1,6 @@
 {
   "name": "@northern/di",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple Dependency Injection container for JavaScript",
   "main": "lib/index.js",
   "scripts": {
@@ -13,8 +13,9 @@
     "url": "git+https://github.com/northern/di.js.git"
   },
   "keywords": [
-    "http",
-    "request",
+    "di",
+    "dependency injection",
+    "inversion of control"
     "library"
   ],
   "author": "northern",
