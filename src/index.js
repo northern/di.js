@@ -11,11 +11,7 @@ export default class Container {
 
     if (lazy) {
       this.services[name] = (container) => {
-        const service = callback.call(null, container)
-        
-        this.services[name] = service
-
-        return service
+        return this.services[name] = callback.call(null, container)
       }
     }
     else {
