@@ -1,6 +1,6 @@
 {
   "name": "@northern/di",
-  "version": "1.0.4",
+  "version": "2.0.0",
   "description": "A simple Dependency Injection container for JavaScript",
   "main": "lib/index.js",
   "files": [
