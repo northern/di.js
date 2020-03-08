@@ -1,2 +1,4 @@
 lib
+tsconfig.json
+coverage
 node_modules

@@ -1,12 +1,18 @@
 {
   "name": "@northern/di",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A simple Dependency Injection container for JavaScript",
   "main": "lib/index.js",
+  "files": [
+    "lib/**/*"
+  ],
   "scripts": {
+    "build": "tsc --removeComments",
     "test": "jest",
-    "test:watch": "jest --watch",
-    "prepublish": "babel src --out-dir lib --ignore *.test.js"
+    "test:watch": "jest --watch --no-coverage",
+    "test:coverage": "jest --coverage",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test"
   },
   "repository": {
     "type": "git",
@@ -24,18 +30,12 @@
     "url": "https://github.com/northern/di.js/issues"
   },
   "homepage": "https://github.com/northern/di.js#readme",
-  "babel": {
-    "presets": [
-      "es2015"
-    ]
-  },
-  "jest": {
-    "modulePathIgnorePatterns": ["node_mdules", "lib"]
-  },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.3",
-    "babel-preset-es2015": "^6.24.1",
-    "jest": "^22.4.3"
+    "@types/jest": "^25.1.4",
+    "@types/uuid": "^7.0.0",
+    "jest": "^25.1.0",
+    "ts-jest": "^25.2.1",
+    "typescript": "^3.8.3",
+    "uuid": "^7.0.2"
   }
 }
