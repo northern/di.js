@@ -18,7 +18,7 @@ jobs:
       - name: Set up NodeJs
         uses: actions/setup-node@v3
         with:
-          node-version: '16'
+          node-version: '18'
 
-      - run: npm install --save --legacy-peer-deps
+      - run: npm install
       - run: npm run test
