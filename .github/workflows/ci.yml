@@ -9,7 +9,7 @@ on:
 jobs:
   test:
     name: Test suite
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
 
     steps:
       - name: Clone repository
@@ -18,7 +18,7 @@ jobs:
       - name: Set up NodeJs
         uses: actions/setup-node@v3
         with:
-          node-version: '18'
+          node-version: '22'
 
       - run: npm install
       - run: npm run test
